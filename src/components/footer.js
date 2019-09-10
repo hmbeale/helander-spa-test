@@ -10,7 +10,8 @@ const useStyles = makeStyles({
     maxWidth: 500,
     textAlign: 'left',
     margin: "auto",
-    marginTop: "40px"
+    marginTop: "40px",
+    marginBottom: '20px'
   },
   typography: {
     //color: "brown"

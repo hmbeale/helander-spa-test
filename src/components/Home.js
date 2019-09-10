@@ -32,6 +32,7 @@ const useStyles = makeStyles({
     
     margin: 'auto',
     marginTop: '40px',
+    textAlign: 'center',
      
   },
   typographyTop: {

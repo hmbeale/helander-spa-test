@@ -1,46 +1,75 @@
 import React from 'react';
-import Interactive from 'react-interactive';
-import { Link } from 'react-router-dom';
-import { Code } from '../styles/style';
-import s from '../styles/home.style';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+
+//import img1 from '../img/img1.png';
+//import img1Sm from '../img/img1_Small.png'
+import PianoDemo from './piano.js'
+
+//import { Piano, KeyboardShortcuts, MidiNumbers } from 'react-piano';
+//import 'react-piano/dist/styles.css';
+
+import SimpleModal from './simpleModal.js';
+
+import Button from '@material-ui/core/Button';
+
+import Spacer from './spacer.js'
+
+//<img src = {img1} alt = "Teaching Pic" />
+/*
+const firstNote = MidiNumbers.fromNote('c3');
+  const lastNote = MidiNumbers.fromNote('f5');
+  const keyboardShortcuts = KeyboardShortcuts.create({
+    firstNote: firstNote,
+    lastNote: lastNote,
+    keyboardConfig: KeyboardShortcuts.HOME_ROW,
+  });
+*/
+const useStyles = makeStyles({
+  root: {
+    width: '100%',
+    maxWidth: 700,
+    
+    margin: 'auto',
+    marginTop: '40px',
+     
+  },
+  typographyTop: {
+    //color: '#2d1309'       
+    fontFamily: 'open sans',
+    textAlign: 'center',
+      
+  },
+  typographyOther: {
+    color: 'black',  
+    fontFamily: 'open sans',
+    textAlign: 'center',
+    marginBottom: '100px'
+},
+button: {
+  backgroundColor: 'brown',
+  color: 'white',
+  fontFamily: 'open sans',
+  alignText: 'left'
+}
+});
 
 export default function Home() {
-  const repoReadmeLink = text => (
-    <Interactive
-      as="a"
-      {...s.link}
-      href="https://github.com/rafrex/spa-github-pages#readme"
-    >{text}</Interactive>
-  );
+  const classes = useStyles();
 
   return (
-    <div>
-      <p style={s.p}>
-        This is an example single page app built
-        with React and React&nbsp;Router using {' '}
-        <Code>BrowserRouter</Code>. Navigate with the links below and
-        refresh the page or copy/paste the url to test out the redirect
-        functionality deployed to overcome GitHub&nbsp;Pages incompatibility
-        with single page apps (like this one).
-      </p>
-      <p style={s.p}>
-        Please see the {repoReadmeLink('repo readme')} for instructions on how to
-        use this boilerplate to deploy your own single page app using GitHub Pages.
-      </p>
-      <div style={s.pageLinkContainer}>
-        <Interactive
-          as={Link}
-          {...s.link}
-          to="/example"
-        >Example page</Interactive>
-      </div>
-      <div style={s.pageLinkContainer}>
-        <Interactive
-          as={Link}
-          {...s.link}
-          to="/example/two-deep?field1=foo&field2=bar#boom!"
-        >Example two deep with query and hash</Interactive>
-      </div>
+    <div className={classes.root}>
+        
+      <Typography className = {classes.typographyTop} variant="h1" gutterBottom>
+      Hello  
+      </Typography>
+
+      <Typography className = {classes.typographyOther} variant="h2" gutterBottom>
+      I am good at ping pong and can teach you piano  
+      </Typography>     
+            
+      <SimpleModal />
+
     </div>
   );
 }

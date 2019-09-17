@@ -2,8 +2,6 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
-import Divider from '@material-ui/core/Divider';
-
 const useStyles = makeStyles({
   root: {
     width: "100%",
@@ -11,7 +9,9 @@ const useStyles = makeStyles({
     textAlign: 'left',
     margin: "auto",
     marginTop: "40px",
-    marginBottom: '20px'
+    marginBottom: '20px',
+    marginLeft: '10px',
+    marginRight: '10px'
   },
   typography: {
     //color: "brown"

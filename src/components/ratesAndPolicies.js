@@ -25,7 +25,7 @@ export default function RatesAndPolicies() {
 
   return (
     <div className={classes.root}>
-      <Typography className={classes.typography} className={classes.title} variant="h3" gutterBottom>
+      <Typography className={[classes.typography, classes.title]} variant="h3" gutterBottom>
         Rates and Policies
       </Typography>
       <Typography className={classes.typography} variant="body1" gutterBottom>

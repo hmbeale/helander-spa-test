@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/helander-spa-test/static/css/main.cd6b4364.chunk.css",
+    "main.js": "/helander-spa-test/static/js/main.d35bbbf8.chunk.js",
+    "main.js.map": "/helander-spa-test/static/js/main.d35bbbf8.chunk.js.map",
+    "runtime~main.js": "/helander-spa-test/static/js/runtime~main.4d7486a6.js",
+    "runtime~main.js.map": "/helander-spa-test/static/js/runtime~main.4d7486a6.js.map",
+    "static/js/2.881d7a2d.chunk.js": "/helander-spa-test/static/js/2.881d7a2d.chunk.js",
+    "static/js/2.881d7a2d.chunk.js.map": "/helander-spa-test/static/js/2.881d7a2d.chunk.js.map",
+    "index.html": "/helander-spa-test/index.html",
+    "precache-manifest.e4403f1a3fc49681ca268e4ea58aeaa0.js": "/helander-spa-test/precache-manifest.e4403f1a3fc49681ca268e4ea58aeaa0.js",
+    "service-worker.js": "/helander-spa-test/service-worker.js",
+    "static/css/main.cd6b4364.chunk.css.map": "/helander-spa-test/static/css/main.cd6b4364.chunk.css.map"
+  }
+}

@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Hidden from '@material-ui/core/Hidden';
 import withWidth from '@material-ui/core/withWidth';
-import Typography from '@material-ui/core/Typography';
+
 
 import MenuIcon from '@material-ui/icons/Menu';
 
@@ -26,7 +25,6 @@ const useStyles = makeStyles(theme => ({
 
 function MenuButton(props) {
   const classes = useStyles();
-  const { width } = props;
 
   return (
     <div className={classes.root}>

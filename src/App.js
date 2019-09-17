@@ -4,10 +4,7 @@ import './App.css';
 
 import {
   Route,
-  Link,
   Switch,
-  Redirect,
-  BrowserRouter
 } from 'react-router-dom';
 
 import ButtonAppBar from './components/buttonAppBar.js'
@@ -16,7 +13,6 @@ import About from './components/about.js'
 import Testimonials from './components/testimonials.js'
 import RatesAndPolicies from './components/ratesAndPolicies.js'
 import Contact from './components/contact.js'
-import Footer from './components/footer.js'
 
 function App() {
   return (

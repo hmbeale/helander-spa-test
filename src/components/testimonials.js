@@ -14,11 +14,21 @@ const useStyles = makeStyles({
   },
   typography: {
     //color: "brown"
-    fontFamily: 'open sans'
+    fontFamily: 'open sans',
+    marginBottom: '20px',
+    marginLeft: '10px',
+    marginRight: '10px'
+  },
+  typographyBottom: {
+    marginBottom: '40px',
+    marginLeft: '10px',
+    marginRight: '10px'
   },
   title: {
     fontFamily: 'open sans',
-    color: 'brown'
+    color: 'brown',
+    marginLeft: '10px',
+    marginRight: '10px'
   }
 });
 
@@ -27,7 +37,7 @@ export default function Testimonials() {
 
   return (
     <div className={classes.root}>
-      <Typography className={classes.typography} className = {classes.title} variant="h3" gutterBottom>
+      <Typography className={[classes.typography, classes.title]} variant="h3" gutterBottom>
         Testimonials
       </Typography>
       <Typography className={classes.typography} variant="body1" gutterBottom>
@@ -37,15 +47,17 @@ export default function Testimonials() {
         has helped her to excel not only in music, but also socially and
         academically. Our time with Joel was an invaluable part of my daughter's
         childhood that was filled with inspiration, creativity, and the blooming
-        of her soul." ~Rebecca, mother of guitar student Emma
+        of her soul." 
       </Typography>
+      <Typography className={classes.typographyBottom}>~Rebecca, mother of guitar student Emma</Typography>
 
       <Typography className={classes.typography} variant="body1" gutterBottom>
         "Joel is fun and easygoing. He's always willing to follow my interests
         and knows when to insert exercises or information to improve technique.
         He provide a solid base for me to explore from and reliably leads me to
-        the next step in my study." ~ Kathryn, adult piano student
+        the next step in my study."
       </Typography>
+      <Typography className={classes.typographyBottom}> ~Kathryn, adult piano student</Typography>
 
       <Typography className={classes.typography} variant="body1" gutterBottom>
         "Joel was the only teacher in the area who didn’t consider our 5 year
@@ -53,16 +65,18 @@ export default function Testimonials() {
         movement activities which enable our daughter to have fun while making
         progress. 1 ½ years later she proudly played a Beethoven tune at her
         grandparent’s recent 50th anniversary party. She is looking forward to
-        continued fun and learning." ~Marti, mother of guitar student Holland
+        continued fun and learning." 
       </Typography>
+      <Typography className={classes.typographyBottom}> ~Marti, mother of guitar student Holland</Typography>
 
       <Typography className={classes.typography} variant="body1" gutterBottom>
         "Joel is a fantastic teacher. Myriads of challenges face adult learners
         of jazz piano. Joel is great at identifying where the bottle-necks are,
         and coming up with exercises designed to overcome them. He is always
         encouraging too, helping you to inspire to get to the next level. I
-        would wholeheartedly recommend him!" ~Yuko, adult piano student
+        would wholeheartedly recommend him!" 
       </Typography>
+      <Typography className={classes.typographyBottom}> ~Yuko, adult piano student</Typography>
 
       <Typography className={classes.typography} variant="body1" gutterBottom>
         "It was a pleasure having Joel as part of our faculty. He got along
@@ -71,9 +85,10 @@ export default function Testimonials() {
         their time studying with him. They were all very sad when he moved. As a
         teacher, he was able to relate well with his students and was able to
         cater his lessons to the needs of each student. He was very encouraging,
-        while also challenging students in their studies." ~Sarah Kelly,
-        Executive Director at Worcester Music Academy
+        while also challenging students in their studies." 
       </Typography>
+      <Typography className={classes.typographyBottom}> ~Sarah Kelly,
+        Executive Director at Worcester Music Academy</Typography>
 
       <Footer /> 
     </div>

@@ -26,7 +26,7 @@ export default function About() {
 
   return (
     <div className={classes.root}>
-      <Typography className = {classes.typography} className = {classes.title} variant="h3" gutterBottom>
+      <Typography className = {[classes.typography, classes.title]}  variant="h3" gutterBottom>
         About
       </Typography>
 
